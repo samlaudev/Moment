@@ -1,0 +1,13 @@
+//
+//  BaseProject.xcconfig
+//  Moment
+//
+//  Created by Sam Lau on 2021/4/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../Shared/BaseConfigurations.xcconfig"
+#include "../Shared/CompilerAndLanguage.xcconfig"
+#include "../Shared/SDKAndDeviceSupport.xcconfig"

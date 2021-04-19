@@ -1,0 +1,16 @@
+//
+//  DebugTarget.xcconfig
+//  Moment
+//
+//  Created by Sam Lau on 2021/4/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "BaseTarget.xcconfig"
+#include "../Pods/Target Support Files/Pods-Moment/Pods-Moment.debug.xcconfig"
+
+PRODUCT_BUNDLE_NAME = $(inherited) α
+PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.moments.development
+

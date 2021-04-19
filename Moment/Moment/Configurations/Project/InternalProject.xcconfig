@@ -1,0 +1,13 @@
+//
+//  InternalProject.xcconfig
+//  Moment
+//
+//  Created by Sam Lau on 2021/4/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "BaseProject.xcconfig"
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) INTERNAL

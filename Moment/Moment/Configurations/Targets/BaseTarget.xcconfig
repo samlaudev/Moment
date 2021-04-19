@@ -1,0 +1,15 @@
+//
+//  BaseTarget.xcconfig
+//  Moment
+//
+//  Created by Sam Lau on 2021/4/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_VERSION_BASE = 1.0.0
+PRODUCT_VERSION_SUFFIX = 0
+PRODUCT_VERSION = $(PRODUCT_VERSION_BASE).$(PRODUCT_VERSION_SUFFIX)
+
+PRODUCT_BUNDLE_NAME = Moment
