@@ -251,6 +251,7 @@
 			buildPhases = (
 				199CA9663528B6FC74B96895 /* [CP] Check Pods Manifest.lock */,
 				8FC908302628640100448E50 /* Sources */,
+				8F11DFA4262D7FBE00314C11 /* Run SwiftLint */,
 				8FC908312628640100448E50 /* Frameworks */,
 				8FC908322628640100448E50 /* Resources */,
 				3B5E441560B762AD8D996C6F /* [CP] Embed Pods Frameworks */,
@@ -438,6 +439,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MomentTests/Pods-MomentTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8F11DFA4262D7FBE00314C11 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		B42DDDAC5870B08F2217794A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
