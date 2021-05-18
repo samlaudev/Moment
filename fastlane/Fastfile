@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+ENV["FASTLANE_SKIP_UPDATE_CHECK"] = "1"
+ENV["FASTLANE_HIDE_CHANGELOG"] = "1"
+
+default_platform(:ios)
+
+platform :ios do
+  # Development
+  desc "Lint code"
+  lane :lint_code do
+    puts("Lint code using swiftlint")
+    swiftlint(
+      mode: :lint,
+      executable: "./Pods/SwiftLint/swiftlint",
+      config_file: "./Moment/.swiftlint.yml",
+      raise_if_swiftlint_error: true)
+  end
+
+  desc "Lint and format code"
+  lane :format_code do 
+    puts("Lint and format code using swiftlint")
+    swiftlint(
+      mode: :autocorrect,
+      executable: "./Pods/SwiftLint/swiftlint",
+      config_file: "./Moment/.swiftlint.yml",
+      raise_if_swiftlint_error: true)
+  end  
+
+  desc "Sort Xcode project files"
+  lane :sort_files do
+    puts("Sort the files for the Xcode project")
+    sh "../scripts/sort-Xcode-project-file.pl ../Moment/Moment.xcodeproj"
+  end
+end

@@ -124,10 +124,10 @@
 		8F11DF7A262D738100314C11 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				8F11DF7B262D738100314C11 /* Targets */,
-				8F11DF80262D738100314C11 /* Shared */,
-				8F11DF84262D738100314C11 /* Project */,
 				8F11DF89262D738100314C11 /* Firebase */,
+				8F11DF84262D738100314C11 /* Project */,
+				8F11DF80262D738100314C11 /* Shared */,
+				8F11DF7B262D738100314C11 /* Targets */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				8F11DF7C262D738100314C11 /* AppStoreTarget.xcconfig */,
+				8F11DF7F262D738100314C11 /* BaseTarget.xcconfig */,
 				8F11DF7D262D738100314C11 /* DebugTarget.xcconfig */,
 				8F11DF7E262D738100314C11 /* InternalTarget.xcconfig */,
-				8F11DF7F262D738100314C11 /* BaseTarget.xcconfig */,
 			);
 			path = Targets;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 		8F11DF80262D738100314C11 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8F11DF81262D738100314C11 /* CompilerAndLanguage.xcconfig */,
 				8F11DF82262D738100314C11 /* BaseConfigurations.xcconfig */,
+				8F11DF81262D738100314C11 /* CompilerAndLanguage.xcconfig */,
 				8F11DF83262D738100314C11 /* SDKAndDeviceSupport.xcconfig */,
 			);
 			path = Shared;
@@ -156,10 +156,10 @@
 		8F11DF84262D738100314C11 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				8F11DF85262D738100314C11 /* InternalProject.xcconfig */,
 				8F11DF86262D738100314C11 /* AppStoreProject.xcconfig */,
-				8F11DF87262D738100314C11 /* DebugProject.xcconfig */,
 				8F11DF88262D738100314C11 /* BaseProject.xcconfig */,
+				8F11DF87262D738100314C11 /* DebugProject.xcconfig */,
+				8F11DF85262D738100314C11 /* InternalProject.xcconfig */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -198,12 +198,12 @@
 			children = (
 				8F11DF7A262D738100314C11 /* Configurations */,
 				8FC908372628640100448E50 /* AppDelegate.swift */,
+				8FC908402628640300448E50 /* Assets.xcassets */,
+				8FC908452628640300448E50 /* Info.plist */,
+				8FC908422628640300448E50 /* LaunchScreen.storyboard */,
+				8FC9083D2628640100448E50 /* Main.storyboard */,
 				8FC908392628640100448E50 /* SceneDelegate.swift */,
 				8FC9083B2628640100448E50 /* ViewController.swift */,
-				8FC9083D2628640100448E50 /* Main.storyboard */,
-				8FC908402628640300448E50 /* Assets.xcassets */,
-				8FC908422628640300448E50 /* LaunchScreen.storyboard */,
-				8FC908452628640300448E50 /* Info.plist */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 		8FC9084D2628640400448E50 /* MomentTests */ = {
 			isa = PBXGroup;
 			children = (
-				8FC9084E2628640400448E50 /* MomentTests.swift */,
 				8FC908502628640400448E50 /* Info.plist */,
+				8FC9084E2628640400448E50 /* MomentTests.swift */,
 			);
 			path = MomentTests;
 			sourceTree = "<group>";
@@ -220,8 +220,8 @@
 		8FC908582628640400448E50 /* MomentUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8FC908592628640400448E50 /* MomentUITests.swift */,
 				8FC9085B2628640400448E50 /* Info.plist */,
+				8FC908592628640400448E50 /* MomentUITests.swift */,
 			);
 			path = MomentUITests;
 			sourceTree = "<group>";
@@ -229,14 +229,14 @@
 		AC3F14514EE5A9ACAEA1A3C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36A0A9D7F931A7BEB9AC5742 /* Pods-Moment.debug.xcconfig */,
-				F3306CDE42ED01AED35BCC4D /* Pods-Moment.release.xcconfig */,
-				5C1F5552DF6E53BB04129307 /* Pods-MomentTests.debug.xcconfig */,
-				2A47728528B9F68B2CD37457 /* Pods-MomentTests.release.xcconfig */,
-				A1669A849633749400B8C292 /* Pods-Moment.internal.xcconfig */,
 				01F0C4923A427EB3F22C9C8E /* Pods-Moment.appstore.xcconfig */,
-				3F3C7092B89FFE38382BD9A8 /* Pods-MomentTests.internal.xcconfig */,
+				36A0A9D7F931A7BEB9AC5742 /* Pods-Moment.debug.xcconfig */,
+				A1669A849633749400B8C292 /* Pods-Moment.internal.xcconfig */,
+				F3306CDE42ED01AED35BCC4D /* Pods-Moment.release.xcconfig */,
 				8D1CD60A79FE32CAE9E9E4D1 /* Pods-MomentTests.appstore.xcconfig */,
+				5C1F5552DF6E53BB04129307 /* Pods-MomentTests.debug.xcconfig */,
+				3F3C7092B89FFE38382BD9A8 /* Pods-MomentTests.internal.xcconfig */,
+				2A47728528B9F68B2CD37457 /* Pods-MomentTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -350,19 +350,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */,
+				8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */,
+				8F11DF8A262D738100314C11 /* AppStoreTarget.xcconfig in Resources */,
 				8FC908412628640300448E50 /* Assets.xcassets in Resources */,
 				8F11DF8F262D738100314C11 /* BaseConfigurations.xcconfig in Resources */,
-				8FC9083F2628640100448E50 /* Main.storyboard in Resources */,
-				8F11DF8B262D738100314C11 /* DebugTarget.xcconfig in Resources */,
 				8F11DF94262D738100314C11 /* BaseProject.xcconfig in Resources */,
 				8F11DF8D262D738100314C11 /* BaseTarget.xcconfig in Resources */,
-				8F11DF93262D738100314C11 /* DebugProject.xcconfig in Resources */,
 				8F11DF8E262D738100314C11 /* CompilerAndLanguage.xcconfig in Resources */,
+				8F11DF93262D738100314C11 /* DebugProject.xcconfig in Resources */,
+				8F11DF8B262D738100314C11 /* DebugTarget.xcconfig in Resources */,
 				8F11DF91262D738100314C11 /* InternalProject.xcconfig in Resources */,
-				8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */,
 				8F11DF8C262D738100314C11 /* InternalTarget.xcconfig in Resources */,
-				8F11DF8A262D738100314C11 /* AppStoreTarget.xcconfig in Resources */,
+				8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */,
+				8FC9083F2628640100448E50 /* Main.storyboard in Resources */,
 				8F11DF90262D738100314C11 /* SDKAndDeviceSupport.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,9 +487,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC9083C2628640100448E50 /* ViewController.swift in Sources */,
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
 				8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */,
+				8FC9083C2628640100448E50 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
