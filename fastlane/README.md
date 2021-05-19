@@ -46,6 +46,11 @@ Build development app
 fastlane ios tests
 ```
 Run unit tests
+### ios create_new_profiles
+```
+fastlane ios create_new_profiles
+```
+Create all new provisioning profiles managed by fastlane match
 
 ----
 

@@ -12,4 +12,4 @@
 #include "../Pods/Target Support Files/Pods-Moment/Pods-Moment.appstore.xcconfig"
 
 PRODUCT_BUNDLE_NAME = $(inherited)
-PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.moments
+PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.cp3.moment
