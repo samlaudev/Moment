@@ -45,4 +45,32 @@ platform :ios do
     puts("Sort the files for the Xcode project")
     sh "../scripts/sort-Xcode-project-file.pl ../Moment/Moment.xcodeproj"
   end
+
+  desc "Prepare for a pull request"
+  lane :prepare_pr do
+    format_code
+    sort_files
+  end
+
+  desc "Build development app"
+  lane :build_dev_app do
+    puts("Build development app")
+    gym(workspace: "Moment.xcworkspace",
+      scheme: "Moment",
+      configuration: "Debug",
+      export_method: "development",
+      xcargs: "-allowProvisioningUpdates")
+  end
+
+  # Test
+  desc "Run unit tests"
+  lane :tests do
+    puts("Run the tests")
+    scan(workspace: "Moment.xcworkspace",
+      scheme: "Moment",
+      output_directory: "./fastlane/test_output",
+      output_types: "html",
+      buildlog_path: "./fastlane/test_output")
+  end
+
 end

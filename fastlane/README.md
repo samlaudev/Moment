@@ -31,6 +31,21 @@ Lint and format code
 fastlane ios sort_files
 ```
 Sort Xcode project files
+### ios prepare_pr
+```
+fastlane ios prepare_pr
+```
+Prepare for a pull request
+### ios build_dev_app
+```
+fastlane ios build_dev_app
+```
+Build development app
+### ios tests
+```
+fastlane ios tests
+```
+Run unit tests
 
 ----
 
