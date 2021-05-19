@@ -184,6 +184,33 @@ platform :ios do
     )
   end
 
+  desc "Add new device to provisioning profile"
+  lane :add_device do |options|
+    name = options[:name]
+    udid = options[:udid]
+    
+    # Add device to App Store Connect
+    api_key = get_app_store_connect_api_key
+    register_device(
+      name: name,
+      udid: udid,
+      team_id: "5V2BL643LV",
+      api_key: api_key 
+    )
+
+    # Update profiles to Git private repo
+    match(
+      type: "adhoc",
+      force: true,
+      storage_mode: "git",
+      git_url: "https://github.com/samlaudev/moment-codesign",
+      app_identifier: "com.samlaudev.cp3.moment.internal",
+      team_id: "5V2BL643LV",
+      api_key: api_key 
+    )
+
+  end
+
   # Private lanes
   desc 'Get App Store Connect API key'
   private_lane :get_app_store_connect_api_key do
