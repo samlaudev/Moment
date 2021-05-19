@@ -46,6 +46,11 @@ Build development app
 fastlane ios tests
 ```
 Run unit tests
+### ios download_profiles
+```
+fastlane ios download_profiles
+```
+Download certificates and profiles
 ### ios create_new_profiles
 ```
 fastlane ios create_new_profiles
