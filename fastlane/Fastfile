@@ -244,6 +244,24 @@ platform :ios do
     puts("If you run this lane on your local machine, should not commit the changes for your project file to Git")
   end
 
+  desc "Create an archive of the production app with app store distribution"
+  lane :archive_appstore do
+    unlock_keychain(
+      path: keychain_name,
+      password: keychain_password
+    )
+
+    puts("Create an archive for internal testing")
+    gym(
+      workspace: workspace,
+      scheme: app_name + "-AppStore",
+      export_method: "app-store",
+      xcargs: "-allowProvisioningUpdates"
+    )
+
+    puts("If you run this lane on your local machine, should not commit the changes for your project file to Git")
+  end
+
   # Private lanes
   desc 'Get App Store Connect API key'
   private_lane :get_app_store_connect_api_key do

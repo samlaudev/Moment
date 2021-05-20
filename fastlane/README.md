@@ -71,6 +71,11 @@ Add new device to provisioning profile
 fastlane ios archive_internal
 ```
 Create an archive of the internal app for testing
+### ios archive_appstore
+```
+fastlane ios archive_appstore
+```
+Create an archive of the production app with app store distribution
 
 ----
 
