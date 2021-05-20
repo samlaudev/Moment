@@ -251,7 +251,7 @@ platform :ios do
       password: keychain_password
     )
 
-    puts("Create an archive for internal testing")
+    puts("Create an archive for app store submission")
     gym(
       workspace: workspace,
       scheme: app_name + "-AppStore",
