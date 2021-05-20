@@ -66,6 +66,11 @@ Nuke all provisioning profiles managed by fastlane match
 fastlane ios add_device
 ```
 Add new device to provisioning profile
+### ios archive_internal
+```
+fastlane ios archive_internal
+```
+Create an archive of the internal app for testing
 
 ----
 

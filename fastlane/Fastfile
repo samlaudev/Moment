@@ -32,6 +32,7 @@ swiftlint_config_file = app_name + "/.swiftlint.yml"
 sort_files_command = "../scripts/sort-Xcode-project-file.pl " + "../" + 
                       app_name + "/" + app_name + ".xcodeproj"
 workspace =  app_name + ".xcworkspace"
+xcodeproj = app_name + "/" + app_name + ".xcodeproj"
 keychain_name = app_name + "AppKeychain"
 keychain_password = app_name + "AppKeychainPassword"
 
@@ -222,7 +223,39 @@ platform :ios do
       team_id: team_id,
       api_key: api_key 
     )
+  end
 
+  # Archive
+  desc "Create an archive of the internal app for testing"
+  lane :archive_internal do
+    unlock_keychain(
+      path: keychain_name,
+      password: keychain_password
+    )
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: xcodeproj,
+      code_sign_identity: "iPhone Distribution",
+      bundle_identifier: app_identifier_internal,
+      profile_name: "match AdHoc com.samlaudev.cp3.moment.internal"
+    )
+
+    puts("Create an archive for internal testing")
+    gym(
+      workspace: workspace,
+      scheme: app_name + "-Internal",
+      export_method: "ad-hoc",
+      xcargs: "-allowProvisioningUpdates"
+    )
+
+    update_code_signing_settings(
+      use_automatic_signing: true,
+      path: xcodeproj,
+      build_configurations: "Debug"
+    )
+
+    puts("If you run this lane on your local machine, should not commit the changes for your project file to Git")
   end
 
   # Private lanes
