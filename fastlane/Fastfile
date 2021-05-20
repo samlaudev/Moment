@@ -233,26 +233,12 @@ platform :ios do
       password: keychain_password
     )
 
-    update_code_signing_settings(
-      use_automatic_signing: false,
-      path: xcodeproj,
-      code_sign_identity: "iPhone Distribution",
-      bundle_identifier: app_identifier_internal,
-      profile_name: "match AdHoc com.samlaudev.cp3.moment.internal"
-    )
-
     puts("Create an archive for internal testing")
     gym(
       workspace: workspace,
       scheme: app_name + "-Internal",
       export_method: "ad-hoc",
       xcargs: "-allowProvisioningUpdates"
-    )
-
-    update_code_signing_settings(
-      use_automatic_signing: true,
-      path: xcodeproj,
-      build_configurations: "Debug"
     )
 
     puts("If you run this lane on your local machine, should not commit the changes for your project file to Git")
