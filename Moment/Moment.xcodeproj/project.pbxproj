@@ -28,6 +28,10 @@
 		8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908422628640300448E50 /* LaunchScreen.storyboard */; };
 		8FC9084F2628640400448E50 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9084E2628640400448E50 /* MomentTests.swift */; };
 		8FC9085A2628640400448E50 /* MomentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908592628640400448E50 /* MomentUITests.swift */; };
+		8FD97A6926574D5C005EFD9A /* GoogleService-Info-Internal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */; };
+		8FD97A6A26574D5C005EFD9A /* GoogleService-Info-AppStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */; };
+		8FD97A6B26574D5C005EFD9A /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */; };
+		8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD97A71265756BC005EFD9A /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		8FC908552628640400448E50 /* MomentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908592628640400448E50 /* MomentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentUITests.swift; sourceTree = "<group>"; };
 		8FC9085B2628640400448E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Internal.plist"; sourceTree = "<group>"; };
+		8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist"; sourceTree = "<group>"; };
+		8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
+		8FD97A71265756BC005EFD9A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A1669A849633749400B8C292 /* Pods-Moment.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moment.internal.xcconfig"; path = "Target Support Files/Pods-Moment/Pods-Moment.internal.xcconfig"; sourceTree = "<group>"; };
 		DC8733D1FB28D4FB162AA48B /* Pods_MomentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3306CDE42ED01AED35BCC4D /* Pods-Moment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moment.release.xcconfig"; path = "Target Support Files/Pods-Moment/Pods-Moment.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +132,7 @@
 		8F11DF7A262D738100314C11 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				8F11DF89262D738100314C11 /* Firebase */,
+				8FD97A6526574D38005EFD9A /* Firebase */,
 				8F11DF84262D738100314C11 /* Project */,
 				8F11DF80262D738100314C11 /* Shared */,
 				8F11DF7B262D738100314C11 /* Targets */,
@@ -164,13 +172,6 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
-		8F11DF89262D738100314C11 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
 		8FC9082B2628640100448E50 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +197,7 @@
 		8FC908362628640100448E50 /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				8FD97A6F26575665005EFD9A /* Foundations */,
 				8F11DF7A262D738100314C11 /* Configurations */,
 				8FC908372628640100448E50 /* AppDelegate.swift */,
 				8FC908402628640300448E50 /* Assets.xcassets */,
@@ -224,6 +226,32 @@
 				8FC908592628640400448E50 /* MomentUITests.swift */,
 			);
 			path = MomentUITests;
+			sourceTree = "<group>";
+		};
+		8FD97A6526574D38005EFD9A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */,
+				8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */,
+				8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		8FD97A6F26575665005EFD9A /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				8FD97A7026575670005EFD9A /* Utilities */,
+			);
+			path = Foundations;
+			sourceTree = "<group>";
+		};
+		8FD97A7026575670005EFD9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8FD97A71265756BC005EFD9A /* Configuration.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		AC3F14514EE5A9ACAEA1A3C7 /* Pods */ = {
@@ -352,16 +380,19 @@
 			files = (
 				8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */,
 				8F11DF8A262D738100314C11 /* AppStoreTarget.xcconfig in Resources */,
+				8FD97A6B26574D5C005EFD9A /* GoogleService-Info-Development.plist in Resources */,
 				8FC908412628640300448E50 /* Assets.xcassets in Resources */,
 				8F11DF8F262D738100314C11 /* BaseConfigurations.xcconfig in Resources */,
 				8F11DF94262D738100314C11 /* BaseProject.xcconfig in Resources */,
 				8F11DF8D262D738100314C11 /* BaseTarget.xcconfig in Resources */,
 				8F11DF8E262D738100314C11 /* CompilerAndLanguage.xcconfig in Resources */,
+				8FD97A6A26574D5C005EFD9A /* GoogleService-Info-AppStore.plist in Resources */,
 				8F11DF93262D738100314C11 /* DebugProject.xcconfig in Resources */,
 				8F11DF8B262D738100314C11 /* DebugTarget.xcconfig in Resources */,
 				8F11DF91262D738100314C11 /* InternalProject.xcconfig in Resources */,
 				8F11DF8C262D738100314C11 /* InternalTarget.xcconfig in Resources */,
 				8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */,
+				8FD97A6926574D5C005EFD9A /* GoogleService-Info-Internal.plist in Resources */,
 				8FC9083F2628640100448E50 /* Main.storyboard in Resources */,
 				8F11DF90262D738100314C11 /* SDKAndDeviceSupport.xcconfig in Resources */,
 			);
@@ -489,6 +520,7 @@
 			files = (
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
 				8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */,
+				8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */,
 				8FC9083C2628640100448E50 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
