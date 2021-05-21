@@ -33,10 +33,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     func onLaunch() {
-        // Load a named file.
-        let filePath = Bundle.main.path(forResource: try? Configuration.value(for: "FIREBASE_CONFIG_FILENAME"), ofType: "plist")!
-        guard let fileopts = FirebaseOptions(contentsOfFile: filePath)
-          else { assert(false, "Couldn't load config file") }
-        FirebaseApp.configure(options: fileopts)
     }
 }

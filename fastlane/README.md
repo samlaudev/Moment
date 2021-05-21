@@ -36,9 +36,9 @@ Sort Xcode project files
 fastlane ios prepare_pr
 ```
 Prepare for a pull request
-### ios build_dev_app
+### ios build
 ```
-fastlane ios build_dev_app
+fastlane ios build
 ```
 Build development app
 ### ios tests
@@ -66,16 +66,21 @@ Nuke all provisioning profiles managed by fastlane match
 fastlane ios add_device
 ```
 Add new device to provisioning profile
-### ios archive_internal
+### ios archive_beta
 ```
-fastlane ios archive_internal
+fastlane ios archive_beta
 ```
 Create an archive of the internal app for testing
-### ios archive_appstore
+### ios archive_release
 ```
-fastlane ios archive_appstore
+fastlane ios archive_release
 ```
 Create an archive of the production app with app store distribution
+### ios beta_firebase
+```
+fastlane ios beta_firebase
+```
+Deploy the internal app to Firebase Distribution
 
 ----
 

@@ -35,6 +35,7 @@ workspace =  app_name + ".xcworkspace"
 xcodeproj = app_name + "/" + app_name + ".xcodeproj"
 keychain_name = app_name + "AppKeychain"
 keychain_password = app_name + "AppKeychainPassword"
+ipa_path = app_name + ".ipa"
 
 default_platform(:ios)
 
@@ -73,7 +74,7 @@ platform :ios do
   end
 
   desc "Build development app"
-  lane :build_dev_app do
+  lane :build do
     puts("Build development app")
     gym(workspace: workspace,
       scheme: app_name,
@@ -227,7 +228,7 @@ platform :ios do
 
   # Archive
   desc "Create an archive of the internal app for testing"
-  lane :archive_internal do
+  lane :archive_beta do
     unlock_keychain(
       path: keychain_name,
       password: keychain_password
@@ -245,7 +246,7 @@ platform :ios do
   end
 
   desc "Create an archive of the production app with app store distribution"
-  lane :archive_appstore do
+  lane :archive_release do
     unlock_keychain(
       path: keychain_name,
       password: keychain_password
@@ -260,6 +261,20 @@ platform :ios do
     )
 
     puts("If you run this lane on your local machine, should not commit the changes for your project file to Git")
+  end
+  
+  # Deploy
+  desc "Deploy the internal app to Firebase Distribution"
+  lane :beta_firebase do
+    archive_beta
+
+    firebase_app_distribution(
+      app: "1:1006072846935:ios:9fb558dba03e06efeea112",
+      ipa_path: ipa_path,
+      groups: "internal-testers",
+      release_notes: "A new build for the Internal App",
+      firebase_cli_token: ENV["FIREBASE_TOKEN"]
+    )
   end
 
   # Private lanes
