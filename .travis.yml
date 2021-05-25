@@ -1,10 +1,11 @@
 language: swift
-osx_image: xcode12.4
+osx_image: xcode12.2
 env:
   global:
     - CI_BUILD_NUMER=${TRAVIS_BUILD_NUMBER}
 before_install:
-  - sh ./scripts/setup.sh 
+  - bundle install
+  - bundle exec pod install
 
 jobs:
   include:
