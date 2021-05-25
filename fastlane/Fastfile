@@ -231,7 +231,7 @@ platform :ios do
 
   # Archive
   desc "Create an archive of the internal app for testing"
-  lane :archive_beta do
+  lane :archive_internal do
     unlock_keychain(
       path: keychain_name,
       password: keychain_password
@@ -249,7 +249,7 @@ platform :ios do
   end
 
   desc "Create an archive of the production app with app store distribution"
-  lane :archive_release do
+  lane :archive_appstore do
     unlock_keychain(
       path: keychain_name,
       password: keychain_password
@@ -268,9 +268,7 @@ platform :ios do
   
   # Deploy
   desc "Deploy the internal app to Firebase Distribution"
-  lane :beta do
-    archive_beta
-
+  lane :deploy_internal do
     firebase_app_distribution(
       app: firebase_app_id,
       ipa_path: ipa_path,
@@ -281,7 +279,7 @@ platform :ios do
   end
 
   desc "Deploy the production app to App Store"
-  lane :release do
+  lane :deploy_appstore do
     api_key = get_app_store_connect_api_key
     deliver(
       api_key: api_key,
