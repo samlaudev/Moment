@@ -4,8 +4,7 @@ env:
   global:
     - CI_BUILD_NUMER=${TRAVIS_BUILD_NUMBER}
 before_install:
-  - bundle install
-  - bundle exec pod install
+  - sh ./scripts/setup.sh 
 
 jobs:
   include:
