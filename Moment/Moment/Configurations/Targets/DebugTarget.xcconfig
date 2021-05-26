@@ -12,6 +12,6 @@
 #include "../Pods/Target Support Files/Pods-Moment/Pods-Moment.debug.xcconfig"
 
 PRODUCT_BUNDLE_NAME = $(inherited) α
-PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.cp3.moment.development
+PRODUCT_BUNDLE_IDENTIFIER = com.samlaudev.cp13.moment.development
 FIREBASE_CONFIG_FILENAME = GoogleService-Info-Development.plist
 

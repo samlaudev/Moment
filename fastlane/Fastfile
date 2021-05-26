@@ -21,8 +21,9 @@ app_name = "Moment"
 
 # Profile config
 git_url = "https://github.com/samlaudev/moment-codesign"
-app_identifier_internal = "com.samlaudev.cp3.moment.internal"
-app_identifier_app_store = "com.samlaudev.cp3.moment"
+app_identifier_development = "com.samlaudev.cp13.moment.development"
+app_identifier_internal = "com.samlaudev.cp13.moment.internal"
+app_identifier_app_store = "com.samlaudev.cp13.moment"
 team_id = "5V2BL643LV"
 key_id = "NZ24F4NNDJ"
 issuer_id = "69a6de86-9e10-47e3-e053-5b8c7c11a4d1"
@@ -94,8 +95,7 @@ platform :ios do
       scheme: app_name,
       output_directory: "./fastlane/test_output",
       output_types: "html",
-      buildlog_path: "./fastlane/test_output",
-      xcargs: "-allowProvisioningUpdates")
+      buildlog_path: "./fastlane/test_output")
   end
 
   # Profile
@@ -107,6 +107,17 @@ platform :ios do
       default_keychain: false,
       timeout: 3600,
       unlock: true,
+    )
+
+    match(
+      type: "development",
+      readonly: true,
+      keychain_name: keychain_name,
+      keychain_password: keychain_password,
+      storage_mode: "git",
+      git_url: git_url,
+      app_identifier: app_identifier_development,
+      team_id: team_id 
     )
 
     match(
@@ -145,6 +156,17 @@ platform :ios do
     )
 
     match(
+      type: "development",
+      keychain_name: keychain_name,
+      keychain_password: keychain_password,
+      storage_mode: "git",
+      git_url: git_url,
+      app_identifier: app_identifier_development,
+      team_id: team_id,
+      api_key: api_key
+    )
+
+    match(
       type: "adhoc",
       keychain_name: keychain_name,
       keychain_password: keychain_password,
@@ -177,6 +199,17 @@ platform :ios do
       default_keychain: false,
       timeout: 3600,
       unlock: true
+    )
+
+    match_nuke(
+      type: "development",
+      keychain_name: keychain_name,
+      keychain_password: keychain_password,
+      storage_mode: "git",
+      git_url: git_url,
+      app_identifier: app_identifier_development,
+      team_id: team_id,
+      api_key: api_key
     )
 
     match_nuke(
