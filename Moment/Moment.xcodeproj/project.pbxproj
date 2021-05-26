@@ -28,10 +28,10 @@
 		8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908422628640300448E50 /* LaunchScreen.storyboard */; };
 		8FC9084F2628640400448E50 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9084E2628640400448E50 /* MomentTests.swift */; };
 		8FC9085A2628640400448E50 /* MomentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908592628640400448E50 /* MomentUITests.swift */; };
-		8FD97A6926574D5C005EFD9A /* GoogleService-Info-Internal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */; };
-		8FD97A6A26574D5C005EFD9A /* GoogleService-Info-AppStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */; };
-		8FD97A6B26574D5C005EFD9A /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */; };
 		8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD97A71265756BC005EFD9A /* Configuration.swift */; };
+		8FD97AB8265E25C5005EFD9A /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */; };
+		8FD97AB9265E25C5005EFD9A /* GoogleService-Info-AppStore.plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */; };
+		8FD97ABA265E25C5005EFD9A /* GoogleService-Info-Internal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB7265E25C4005EFD9A /* GoogleService-Info-Internal.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,10 +84,10 @@
 		8FC908552628640400448E50 /* MomentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908592628640400448E50 /* MomentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentUITests.swift; sourceTree = "<group>"; };
 		8FC9085B2628640400448E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Internal.plist"; sourceTree = "<group>"; };
-		8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist"; sourceTree = "<group>"; };
-		8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
 		8FD97A71265756BC005EFD9A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
+		8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist.plist"; sourceTree = "<group>"; };
+		8FD97AB7265E25C4005EFD9A /* GoogleService-Info-Internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Internal.plist"; sourceTree = "<group>"; };
 		A1669A849633749400B8C292 /* Pods-Moment.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moment.internal.xcconfig"; path = "Target Support Files/Pods-Moment/Pods-Moment.internal.xcconfig"; sourceTree = "<group>"; };
 		DC8733D1FB28D4FB162AA48B /* Pods_MomentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3306CDE42ED01AED35BCC4D /* Pods-Moment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moment.release.xcconfig"; path = "Target Support Files/Pods-Moment/Pods-Moment.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,9 +231,9 @@
 		8FD97A6526574D38005EFD9A /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				8FD97A6726574D5C005EFD9A /* GoogleService-Info-AppStore.plist */,
-				8FD97A6826574D5C005EFD9A /* GoogleService-Info-Development.plist */,
-				8FD97A6626574D5C005EFD9A /* GoogleService-Info-Internal.plist */,
+				8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */,
+				8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */,
+				8FD97AB7265E25C4005EFD9A /* GoogleService-Info-Internal.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -280,6 +280,7 @@
 				199CA9663528B6FC74B96895 /* [CP] Check Pods Manifest.lock */,
 				8FC908302628640100448E50 /* Sources */,
 				8F11DFA4262D7FBE00314C11 /* Run SwiftLint */,
+				8FD97AA2265E220F005EFD9A /* Copy Firebase Config File */,
 				8FC908312628640100448E50 /* Frameworks */,
 				8FC908322628640100448E50 /* Resources */,
 				3B5E441560B762AD8D996C6F /* [CP] Embed Pods Frameworks */,
@@ -380,19 +381,19 @@
 			files = (
 				8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */,
 				8F11DF8A262D738100314C11 /* AppStoreTarget.xcconfig in Resources */,
-				8FD97A6B26574D5C005EFD9A /* GoogleService-Info-Development.plist in Resources */,
 				8FC908412628640300448E50 /* Assets.xcassets in Resources */,
+				8FD97ABA265E25C5005EFD9A /* GoogleService-Info-Internal.plist in Resources */,
 				8F11DF8F262D738100314C11 /* BaseConfigurations.xcconfig in Resources */,
+				8FD97AB8265E25C5005EFD9A /* GoogleService-Info-Development.plist in Resources */,
 				8F11DF94262D738100314C11 /* BaseProject.xcconfig in Resources */,
 				8F11DF8D262D738100314C11 /* BaseTarget.xcconfig in Resources */,
 				8F11DF8E262D738100314C11 /* CompilerAndLanguage.xcconfig in Resources */,
-				8FD97A6A26574D5C005EFD9A /* GoogleService-Info-AppStore.plist in Resources */,
 				8F11DF93262D738100314C11 /* DebugProject.xcconfig in Resources */,
 				8F11DF8B262D738100314C11 /* DebugTarget.xcconfig in Resources */,
 				8F11DF91262D738100314C11 /* InternalProject.xcconfig in Resources */,
 				8F11DF8C262D738100314C11 /* InternalTarget.xcconfig in Resources */,
 				8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */,
-				8FD97A6926574D5C005EFD9A /* GoogleService-Info-Internal.plist in Resources */,
+				8FD97AB9265E25C5005EFD9A /* GoogleService-Info-AppStore.plist.plist in Resources */,
 				8FC9083F2628640100448E50 /* Main.storyboard in Resources */,
 				8F11DF90262D738100314C11 /* SDKAndDeviceSupport.xcconfig in Resources */,
 			);
@@ -488,6 +489,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		8FD97AA2265E220F005EFD9A /* Copy Firebase Config File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Firebase Config File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${PROJECT_DIR}/Moment/Configurations/Firebase/${FIREBASE_CONFIG_FILENAME}\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/GoogleService-Info.plist\"\n\n\n";
 		};
 		B42DDDAC5870B08F2217794A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

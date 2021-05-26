@@ -33,5 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     func onLaunch() {
+        FirebaseApp.configure()
     }
 }
