@@ -234,7 +234,6 @@ platform :ios do
       api_key: api_key
     )
 
-    delete_keychain(name: keychain_name)
   end
 
   desc "Add new device to provisioning profile"
