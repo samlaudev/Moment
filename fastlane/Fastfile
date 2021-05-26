@@ -94,7 +94,8 @@ platform :ios do
       scheme: app_name,
       output_directory: "./fastlane/test_output",
       output_types: "html",
-      buildlog_path: "./fastlane/test_output")
+      buildlog_path: "./fastlane/test_output",
+      xcargs: "-allowProvisioningUpdates")
   end
 
   # Profile

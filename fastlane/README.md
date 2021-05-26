@@ -66,21 +66,26 @@ Nuke all provisioning profiles managed by fastlane match
 fastlane ios add_device
 ```
 Add new device to provisioning profile
-### ios archive_beta
+### ios archive_internal
 ```
-fastlane ios archive_beta
+fastlane ios archive_internal
 ```
 Create an archive of the internal app for testing
-### ios archive_release
+### ios archive_appstore
 ```
-fastlane ios archive_release
+fastlane ios archive_appstore
 ```
 Create an archive of the production app with app store distribution
-### ios beta_firebase
+### ios deploy_internal
 ```
-fastlane ios beta_firebase
+fastlane ios deploy_internal
 ```
 Deploy the internal app to Firebase Distribution
+### ios deploy_appstore
+```
+fastlane ios deploy_appstore
+```
+Deploy the production app to App Store
 
 ----
 
