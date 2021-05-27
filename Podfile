@@ -3,7 +3,7 @@ source 'https://cdn.cocoapods.org/'
 workspace './Moment.xcworkspace'
 project 'Moment/Moment.xcodeproj'
 
-platform :ios, '14.0'
+platform :ios, '13.0'
 use_frameworks!
 
 # ignore all warnings from all dependencies
