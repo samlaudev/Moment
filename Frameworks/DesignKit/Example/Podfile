@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DesignKit_Tests' do
+  pod 'DesignKit', :path => '../'
+  
+  
+end
