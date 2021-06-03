@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.3.0)
+  - DesignKit (1.0.0)
   - Differentiator (4.0.1)
   - Firebase/Analytics (7.0.0):
     - Firebase/Core
@@ -132,6 +133,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (= 5.3.0)
+  - DesignKit (from `./Frameworks/DesignKit`)
   - Firebase/Analytics (= 7.0.0)
   - Firebase/Crashlytics (= 7.0.0)
   - Firebase/Performance (= 7.0.0)
@@ -183,8 +185,13 @@ SPEC REPOS:
     - SwiftGen
     - SwiftLint
 
+EXTERNAL SOURCES:
+  DesignKit:
+    :path: "./Frameworks/DesignKit"
+
 SPEC CHECKSUMS:
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  DesignKit: 31a5f6a42fcc224c7299e6c30612d92ebe00cd2a
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Firebase: 50be68416f50eb4eb2ecb0e78acab9a051ef95df
   FirebaseABTesting: 457bc058cf6de8bcffc6fd9a2a4c933b24bfc264
@@ -216,6 +223,6 @@ SPEC CHECKSUMS:
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: cbfbde0066b7fa5a3390b7f4e798940e316600e2
+PODFILE CHECKSUM: a932b042b8ce488d57c020bd828b8f2f0a6c9d0e
 
 COCOAPODS: 1.10.0
