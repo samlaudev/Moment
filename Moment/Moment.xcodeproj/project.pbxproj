@@ -22,8 +22,6 @@
 		8F11DF94262D738100314C11 /* BaseProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8F11DF88262D738100314C11 /* BaseProject.xcconfig */; };
 		8FC908382628640100448E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908372628640100448E50 /* AppDelegate.swift */; };
 		8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908392628640100448E50 /* SceneDelegate.swift */; };
-		8FC9083C2628640100448E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9083B2628640100448E50 /* ViewController.swift */; };
-		8FC9083F2628640100448E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC9083D2628640100448E50 /* Main.storyboard */; };
 		8FC908412628640300448E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908402628640300448E50 /* Assets.xcassets */; };
 		8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908422628640300448E50 /* LaunchScreen.storyboard */; };
 		8FC9084F2628640400448E50 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9084E2628640400448E50 /* MomentTests.swift */; };
@@ -32,6 +30,8 @@
 		8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE73267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift */; };
 		8FD0AE79267B3EE700935F94 /* InternalTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE78267B3EE700935F94 /* InternalTogglesDataStore.swift */; };
 		8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */; };
+		8FD0AE87267B660C00935F94 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE86267B660C00935F94 /* main.swift */; };
+		8FD0AE8F267B71DE00935F94 /* MomentsTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE8E267B71DE00935F94 /* MomentsTimelineViewController.swift */; };
 		8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD97A71265756BC005EFD9A /* Configuration.swift */; };
 		8FD97AB8265E25C5005EFD9A /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */; };
 		8FD97AB9265E25C5005EFD9A /* GoogleService-Info-AppStore.plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */; };
@@ -77,8 +77,6 @@
 		8FC908342628640100448E50 /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908372628640100448E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC908392628640100448E50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FC9083B2628640100448E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8FC9083E2628640100448E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FC908402628640300448E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC908432628640300448E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC908452628640300448E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +90,8 @@
 		8FD0AE73267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTargetTogglesDataStore.swift; sourceTree = "<group>"; };
 		8FD0AE78267B3EE700935F94 /* InternalTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTogglesDataStore.swift; sourceTree = "<group>"; };
 		8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteTogglesDataStore.swift; sourceTree = "<group>"; };
+		8FD0AE86267B660C00935F94 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8FD0AE8E267B71DE00935F94 /* MomentsTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsTimelineViewController.swift; sourceTree = "<group>"; };
 		8FD97A71265756BC005EFD9A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
 		8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist.plist"; sourceTree = "<group>"; };
@@ -205,15 +205,15 @@
 		8FC908362628640100448E50 /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				8FD0AE8B267B719800935F94 /* Features */,
+				8FD0AE82267B659100935F94 /* Resources */,
 				8FD97A6F26575665005EFD9A /* Foundations */,
 				8F11DF7A262D738100314C11 /* Configurations */,
 				8FC908372628640100448E50 /* AppDelegate.swift */,
+				8FC908392628640100448E50 /* SceneDelegate.swift */,
+				8FD0AE86267B660C00935F94 /* main.swift */,
 				8FC908402628640300448E50 /* Assets.xcassets */,
 				8FC908452628640300448E50 /* Info.plist */,
-				8FC908422628640300448E50 /* LaunchScreen.storyboard */,
-				8FC9083D2628640100448E50 /* Main.storyboard */,
-				8FC908392628640100448E50 /* SceneDelegate.swift */,
-				8FC9083B2628640100448E50 /* ViewController.swift */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -245,6 +245,38 @@
 				8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */,
 			);
 			path = Toggles;
+			sourceTree = "<group>";
+		};
+		8FD0AE82267B659100935F94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FC908422628640300448E50 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8FD0AE8B267B719800935F94 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0AE8C267B71A500935F94 /* Moment */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8FD0AE8C267B71A500935F94 /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0AE8D267B71AD00935F94 /* Views */,
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		8FD0AE8D267B71AD00935F94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0AE8E267B71DE00935F94 /* MomentsTimelineViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8FD97A6526574D38005EFD9A /* Firebase */ = {
@@ -414,7 +446,6 @@
 				8F11DF8C262D738100314C11 /* InternalTarget.xcconfig in Resources */,
 				8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */,
 				8FD97AB9265E25C5005EFD9A /* GoogleService-Info-AppStore.plist.plist in Resources */,
-				8FC9083F2628640100448E50 /* Main.storyboard in Resources */,
 				8F11DF90262D738100314C11 /* SDKAndDeviceSupport.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,12 +590,13 @@
 			files = (
 				8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */,
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
+				8FD0AE87267B660C00935F94 /* main.swift in Sources */,
+				8FD0AE8F267B71DE00935F94 /* MomentsTimelineViewController.swift in Sources */,
 				8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */,
 				8FD0AE6C267B3DA700935F94 /* TogglesDataStoreType.swift in Sources */,
 				8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */,
 				8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */,
 				8FD0AE79267B3EE700935F94 /* InternalTogglesDataStore.swift in Sources */,
-				8FC9083C2628640100448E50 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,14 +632,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8FC9083D2628640100448E50 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FC9083E2628640100448E50 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8FC908422628640300448E50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
