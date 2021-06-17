@@ -28,6 +28,10 @@
 		8FC908442628640300448E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908422628640300448E50 /* LaunchScreen.storyboard */; };
 		8FC9084F2628640400448E50 /* MomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9084E2628640400448E50 /* MomentTests.swift */; };
 		8FC9085A2628640400448E50 /* MomentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908592628640400448E50 /* MomentUITests.swift */; };
+		8FD0AE6C267B3DA700935F94 /* TogglesDataStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE6B267B3DA700935F94 /* TogglesDataStoreType.swift */; };
+		8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE73267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift */; };
+		8FD0AE79267B3EE700935F94 /* InternalTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE78267B3EE700935F94 /* InternalTogglesDataStore.swift */; };
+		8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */; };
 		8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD97A71265756BC005EFD9A /* Configuration.swift */; };
 		8FD97AB8265E25C5005EFD9A /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */; };
 		8FD97AB9265E25C5005EFD9A /* GoogleService-Info-AppStore.plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */; };
@@ -84,6 +88,10 @@
 		8FC908552628640400448E50 /* MomentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908592628640400448E50 /* MomentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentUITests.swift; sourceTree = "<group>"; };
 		8FC9085B2628640400448E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD0AE6B267B3DA700935F94 /* TogglesDataStoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesDataStoreType.swift; sourceTree = "<group>"; };
+		8FD0AE73267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTargetTogglesDataStore.swift; sourceTree = "<group>"; };
+		8FD0AE78267B3EE700935F94 /* InternalTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTogglesDataStore.swift; sourceTree = "<group>"; };
+		8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteTogglesDataStore.swift; sourceTree = "<group>"; };
 		8FD97A71265756BC005EFD9A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8FD97AB5265E25C4005EFD9A /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
 		8FD97AB6265E25C4005EFD9A /* GoogleService-Info-AppStore.plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-AppStore.plist.plist"; sourceTree = "<group>"; };
@@ -228,6 +236,17 @@
 			path = MomentUITests;
 			sourceTree = "<group>";
 		};
+		8FD0AE6A267B3D3500935F94 /* Toggles */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0AE6B267B3DA700935F94 /* TogglesDataStoreType.swift */,
+				8FD0AE73267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift */,
+				8FD0AE78267B3EE700935F94 /* InternalTogglesDataStore.swift */,
+				8FD0AE7D267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift */,
+			);
+			path = Toggles;
+			sourceTree = "<group>";
+		};
 		8FD97A6526574D38005EFD9A /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +260,7 @@
 		8FD97A6F26575665005EFD9A /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
+				8FD0AE6A267B3D3500935F94 /* Toggles */,
 				8FD97A7026575670005EFD9A /* Utilities */,
 			);
 			path = Foundations;
@@ -537,9 +557,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */,
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
+				8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */,
+				8FD0AE6C267B3DA700935F94 /* TogglesDataStoreType.swift in Sources */,
 				8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */,
 				8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */,
+				8FD0AE79267B3EE700935F94 /* InternalTogglesDataStore.swift in Sources */,
 				8FC9083C2628640100448E50 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
