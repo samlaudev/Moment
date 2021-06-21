@@ -20,6 +20,15 @@
 		8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8F11DF86262D738100314C11 /* AppStoreProject.xcconfig */; };
 		8F11DF93262D738100314C11 /* DebugProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8F11DF87262D738100314C11 /* DebugProject.xcconfig */; };
 		8F11DF94262D738100314C11 /* BaseProject.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8F11DF88262D738100314C11 /* BaseProject.xcconfig */; };
+		8F8D71692680943D00A2DB4E /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71682680943D00A2DB4E /* AppRouting.swift */; };
+		8F8D71762680951900A2DB4E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71752680951900A2DB4E /* AppRouter.swift */; };
+		8F8D717B2680954E00A2DB4E /* Navigating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D717A2680954E00A2DB4E /* Navigating.swift */; };
+		8F8D7180268098A700A2DB4E /* RoutingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D717F268098A700A2DB4E /* RoutingSource.swift */; };
+		8F8D71852680991800A2DB4E /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71842680991800A2DB4E /* TransitionType.swift */; };
+		8F8D718B2680AFBF00A2DB4E /* ApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D718A2680AFBF00A2DB4E /* ApplicationExtensions.swift */; };
+		8F8D71972680B76400A2DB4E /* InternalMenuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71962680B76400A2DB4E /* InternalMenuNavigator.swift */; };
+		8F8D71A72680B81300A2DB4E /* InternalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */; };
+		8F8D71AC2680BA4800A2DB4E /* UniversalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71AB2680BA4800A2DB4E /* UniversalLinks.swift */; };
 		8FC908382628640100448E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908372628640100448E50 /* AppDelegate.swift */; };
 		8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908392628640100448E50 /* SceneDelegate.swift */; };
 		8FC908412628640300448E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908402628640300448E50 /* Assets.xcassets */; };
@@ -74,6 +83,15 @@
 		8F11DF86262D738100314C11 /* AppStoreProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppStoreProject.xcconfig; sourceTree = "<group>"; };
 		8F11DF87262D738100314C11 /* DebugProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugProject.xcconfig; sourceTree = "<group>"; };
 		8F11DF88262D738100314C11 /* BaseProject.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BaseProject.xcconfig; sourceTree = "<group>"; };
+		8F8D71682680943D00A2DB4E /* AppRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouting.swift; sourceTree = "<group>"; };
+		8F8D71752680951900A2DB4E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		8F8D717A2680954E00A2DB4E /* Navigating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigating.swift; sourceTree = "<group>"; };
+		8F8D717F268098A700A2DB4E /* RoutingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingSource.swift; sourceTree = "<group>"; };
+		8F8D71842680991800A2DB4E /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
+		8F8D718A2680AFBF00A2DB4E /* ApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtensions.swift; sourceTree = "<group>"; };
+		8F8D71962680B76400A2DB4E /* InternalMenuNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuNavigator.swift; sourceTree = "<group>"; };
+		8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuViewController.swift; sourceTree = "<group>"; };
+		8F8D71AB2680BA4800A2DB4E /* UniversalLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalLinks.swift; sourceTree = "<group>"; };
 		8FC908342628640100448E50 /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908372628640100448E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC908392628640100448E50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +198,60 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		8F8D7167268093C400A2DB4E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D71682680943D00A2DB4E /* AppRouting.swift */,
+				8F8D71752680951900A2DB4E /* AppRouter.swift */,
+				8F8D717A2680954E00A2DB4E /* Navigating.swift */,
+				8F8D717F268098A700A2DB4E /* RoutingSource.swift */,
+				8F8D71842680991800A2DB4E /* TransitionType.swift */,
+				8F8D71AB2680BA4800A2DB4E /* UniversalLinks.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8F8D71892680AFAC00A2DB4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D718A2680AFBF00A2DB4E /* ApplicationExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F8D71922680B6D800A2DB4E /* InternalMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D71932680B6E100A2DB4E /* Routing */,
+				8F8D71952680B71400A2DB4E /* ViewModels */,
+				8F8D71942680B6FF00A2DB4E /* Views */,
+			);
+			path = InternalMenu;
+			sourceTree = "<group>";
+		};
+		8F8D71932680B6E100A2DB4E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D71962680B76400A2DB4E /* InternalMenuNavigator.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8F8D71942680B6FF00A2DB4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F8D71952680B71400A2DB4E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		8FC9082B2628640100448E50 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +330,7 @@
 		8FD0AE8B267B719800935F94 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8F8D71922680B6D800A2DB4E /* InternalMenu */,
 				8FD0AE8C267B71A500935F94 /* Moment */,
 			);
 			path = Features;
@@ -292,6 +365,8 @@
 		8FD97A6F26575665005EFD9A /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
+				8F8D71892680AFAC00A2DB4E /* Extensions */,
+				8F8D7167268093C400A2DB4E /* Routing */,
 				8FD0AE6A267B3D3500935F94 /* Toggles */,
 				8FD97A7026575670005EFD9A /* Utilities */,
 			);
@@ -589,14 +664,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */,
+				8F8D7180268098A700A2DB4E /* RoutingSource.swift in Sources */,
+				8F8D71852680991800A2DB4E /* TransitionType.swift in Sources */,
+				8F8D71972680B76400A2DB4E /* InternalMenuNavigator.swift in Sources */,
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
+				8F8D71692680943D00A2DB4E /* AppRouting.swift in Sources */,
 				8FD0AE87267B660C00935F94 /* main.swift in Sources */,
 				8FD0AE8F267B71DE00935F94 /* MomentsTimelineViewController.swift in Sources */,
+				8F8D718B2680AFBF00A2DB4E /* ApplicationExtensions.swift in Sources */,
 				8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */,
 				8FD0AE6C267B3DA700935F94 /* TogglesDataStoreType.swift in Sources */,
+				8F8D717B2680954E00A2DB4E /* Navigating.swift in Sources */,
+				8F8D71762680951900A2DB4E /* AppRouter.swift in Sources */,
 				8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */,
 				8FD97A72265756BC005EFD9A /* Configuration.swift in Sources */,
 				8FD0AE79267B3EE700935F94 /* InternalTogglesDataStore.swift in Sources */,
+				8F8D71A72680B81300A2DB4E /* InternalMenuViewController.swift in Sources */,
+				8F8D71AC2680BA4800A2DB4E /* UniversalLinks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

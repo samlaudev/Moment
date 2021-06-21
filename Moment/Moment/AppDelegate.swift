@@ -33,5 +33,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func onLaunch() {
         FirebaseApp.configure()
+
+        // Register routing here
+        AppRouter.share.register(path: UniversalLinks.internalMenu.rawValue, navigator: InternalMenuNavigator())
+    }
+}
+
+extension UIWindow {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        let togglesDataStoreType: TogglesDataStoreType = BuildTargetDataStore.shared
+        if togglesDataStoreType.isToggleOn(BuildTargetToggle.debug) || togglesDataStoreType.isToggleOn(BuildTargetToggle.internal) {
+            // swiftlint:disable no_hardcoded_strings
+            AppRouter.share.route(to: UniversalLinks.internalMenu.url, from: rootViewController, using: .present)
+            // swiftlint:enable no_hardcoded_strings
+        }
     }
 }
