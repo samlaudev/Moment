@@ -5,7 +5,7 @@
 //  Created by Sam Lau on 2021/6/3.
 //
 
-public struct Spacing {
+public enum Spacing {
     public static let twoExtraSmall: CGFloat = 4
     public static let extraSmall: CGFloat = 8
     public static let small: CGFloat = 12

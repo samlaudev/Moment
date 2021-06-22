@@ -29,6 +29,14 @@
 		8F8D71972680B76400A2DB4E /* InternalMenuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71962680B76400A2DB4E /* InternalMenuNavigator.swift */; };
 		8F8D71A72680B81300A2DB4E /* InternalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */; };
 		8F8D71AC2680BA4800A2DB4E /* UniversalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71AB2680BA4800A2DB4E /* UniversalLinks.swift */; };
+		8F8D71B32681935600A2DB4E /* DesignKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71B22681935600A2DB4E /* DesignKitDemoViewController.swift */; };
+		8F8D71BB2681944600A2DB4E /* InternalMenuCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71BA2681944600A2DB4E /* InternalMenuCellType.swift */; };
+		8F8D71C02681949100A2DB4E /* InternalMenuItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71BF2681949100A2DB4E /* InternalMenuItemViewModel.swift */; };
+		8F8D71C52681B8B400A2DB4E /* InternalMenuDescriptionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71C42681B8B300A2DB4E /* InternalMenuDescriptionItemViewModel.swift */; };
+		8F8D71CA2681BA0C00A2DB4E /* InternalMenuFeatureToggleItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71C92681BA0B00A2DB4E /* InternalMenuFeatureToggleItemViewModel.swift */; };
+		8F8D71CF2681BC6600A2DB4E /* InternalMenuActionTriggerItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71CE2681BC6600A2DB4E /* InternalMenuActionTriggerItemViewModel.swift */; };
+		8F8D71DC2681C25F00A2DB4E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F8D71DE2681C25F00A2DB4E /* Localizable.strings */; };
+		8F8D71F02681EE7500A2DB4E /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D71EF2681EE7500A2DB4E /* Strings+Generated.swift */; };
 		8FC908382628640100448E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908372628640100448E50 /* AppDelegate.swift */; };
 		8FC9083A2628640100448E50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC908392628640100448E50 /* SceneDelegate.swift */; };
 		8FC908412628640300448E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC908402628640300448E50 /* Assets.xcassets */; };
@@ -92,6 +100,15 @@
 		8F8D71962680B76400A2DB4E /* InternalMenuNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuNavigator.swift; sourceTree = "<group>"; };
 		8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuViewController.swift; sourceTree = "<group>"; };
 		8F8D71AB2680BA4800A2DB4E /* UniversalLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalLinks.swift; sourceTree = "<group>"; };
+		8F8D71B22681935600A2DB4E /* DesignKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitDemoViewController.swift; sourceTree = "<group>"; };
+		8F8D71BA2681944600A2DB4E /* InternalMenuCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuCellType.swift; sourceTree = "<group>"; };
+		8F8D71BF2681949100A2DB4E /* InternalMenuItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuItemViewModel.swift; sourceTree = "<group>"; };
+		8F8D71C42681B8B300A2DB4E /* InternalMenuDescriptionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuDescriptionItemViewModel.swift; sourceTree = "<group>"; };
+		8F8D71C92681BA0B00A2DB4E /* InternalMenuFeatureToggleItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuFeatureToggleItemViewModel.swift; sourceTree = "<group>"; };
+		8F8D71CE2681BC6600A2DB4E /* InternalMenuActionTriggerItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalMenuActionTriggerItemViewModel.swift; sourceTree = "<group>"; };
+		8F8D71DD2681C25F00A2DB4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F8D71E22681C34C00A2DB4E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8F8D71EF2681EE7500A2DB4E /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		8FC908342628640100448E50 /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC908372628640100448E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC908392628640100448E50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,7 +257,9 @@
 		8F8D71942680B6FF00A2DB4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F8D71B22681935600A2DB4E /* DesignKitDemoViewController.swift */,
 				8F8D71A62680B81300A2DB4E /* InternalMenuViewController.swift */,
+				8F8D71BA2681944600A2DB4E /* InternalMenuCellType.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,8 +267,20 @@
 		8F8D71952680B71400A2DB4E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8F8D71BF2681949100A2DB4E /* InternalMenuItemViewModel.swift */,
+				8F8D71C42681B8B300A2DB4E /* InternalMenuDescriptionItemViewModel.swift */,
+				8F8D71C92681BA0B00A2DB4E /* InternalMenuFeatureToggleItemViewModel.swift */,
+				8F8D71CE2681BC6600A2DB4E /* InternalMenuActionTriggerItemViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F8D71E62681C71D00A2DB4E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D71EF2681EE7500A2DB4E /* Strings+Generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		8FC9082B2628640100448E50 = {
@@ -277,6 +308,7 @@
 		8FC908362628640100448E50 /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				8F8D71E62681C71D00A2DB4E /* Generated */,
 				8FD0AE8B267B719800935F94 /* Features */,
 				8FD0AE82267B659100935F94 /* Resources */,
 				8FD97A6F26575665005EFD9A /* Foundations */,
@@ -323,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				8FC908422628640300448E50 /* LaunchScreen.storyboard */,
+				8F8D71DE2681C25F00A2DB4E /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -405,6 +438,7 @@
 			buildConfigurationList = 8FC9085E2628640400448E50 /* Build configuration list for PBXNativeTarget "Moment" */;
 			buildPhases = (
 				199CA9663528B6FC74B96895 /* [CP] Check Pods Manifest.lock */,
+				8F8D71D32681C03500A2DB4E /* Run SwiftGen */,
 				8FC908302628640100448E50 /* Sources */,
 				8F11DFA4262D7FBE00314C11 /* Run SwiftLint */,
 				8FD97AA2265E220F005EFD9A /* Copy Firebase Config File */,
@@ -488,6 +522,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 8FC9082B2628640100448E50;
 			productRefGroup = 8FC908352628640100448E50 /* Products */;
@@ -506,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8D71DC2681C25F00A2DB4E /* Localizable.strings in Resources */,
 				8F11DF92262D738100314C11 /* AppStoreProject.xcconfig in Resources */,
 				8F11DF8A262D738100314C11 /* AppStoreTarget.xcconfig in Resources */,
 				8FC908412628640300448E50 /* Assets.xcassets in Resources */,
@@ -616,6 +652,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		8F8D71D32681C03500A2DB4E /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
 		8FD97AA2265E220F005EFD9A /* Copy Firebase Config File */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -663,16 +717,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8D71F02681EE7500A2DB4E /* Strings+Generated.swift in Sources */,
 				8FD0AE7E267B3F0600935F94 /* FirebaseRemoteTogglesDataStore.swift in Sources */,
+				8F8D71BB2681944600A2DB4E /* InternalMenuCellType.swift in Sources */,
+				8F8D71C02681949100A2DB4E /* InternalMenuItemViewModel.swift in Sources */,
 				8F8D7180268098A700A2DB4E /* RoutingSource.swift in Sources */,
+				8F8D71C52681B8B400A2DB4E /* InternalMenuDescriptionItemViewModel.swift in Sources */,
 				8F8D71852680991800A2DB4E /* TransitionType.swift in Sources */,
+				8F8D71CF2681BC6600A2DB4E /* InternalMenuActionTriggerItemViewModel.swift in Sources */,
 				8F8D71972680B76400A2DB4E /* InternalMenuNavigator.swift in Sources */,
 				8FC908382628640100448E50 /* AppDelegate.swift in Sources */,
 				8F8D71692680943D00A2DB4E /* AppRouting.swift in Sources */,
 				8FD0AE87267B660C00935F94 /* main.swift in Sources */,
 				8FD0AE8F267B71DE00935F94 /* MomentsTimelineViewController.swift in Sources */,
 				8F8D718B2680AFBF00A2DB4E /* ApplicationExtensions.swift in Sources */,
+				8F8D71B32681935600A2DB4E /* DesignKitDemoViewController.swift in Sources */,
 				8FD0AE74267B3ECD00935F94 /* BuildTargetTogglesDataStore.swift in Sources */,
+				8F8D71CA2681BA0C00A2DB4E /* InternalMenuFeatureToggleItemViewModel.swift in Sources */,
 				8FD0AE6C267B3DA700935F94 /* TogglesDataStoreType.swift in Sources */,
 				8F8D717B2680954E00A2DB4E /* Navigating.swift in Sources */,
 				8F8D71762680951900A2DB4E /* AppRouter.swift in Sources */,
@@ -716,6 +777,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8F8D71DE2681C25F00A2DB4E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F8D71DD2681C25F00A2DB4E /* en */,
+				8F8D71E22681C34C00A2DB4E /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8FC908422628640300448E50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -732,6 +802,7 @@
 			baseConfigurationReference = 8F11DF86262D738100314C11 /* AppStoreProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -855,6 +926,7 @@
 			baseConfigurationReference = 8F11DF87262D738100314C11 /* DebugProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -918,6 +990,7 @@
 			baseConfigurationReference = 8F11DF85262D738100314C11 /* InternalProject.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -8,11 +8,7 @@
 import UIKit
 
 class MomentsTimelineViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "朋友圈";
     }
-
 }
