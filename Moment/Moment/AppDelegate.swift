@@ -15,8 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    // MARK: Handle Universal Links
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+              let webPageURL = userActivity.webpageURL else {
+            return false
+        }
 
+        AppRouter.share.route(to: webPageURL, from: nil, using: .present)
+        return true
+    }
+
+    // MARK: UISceneSession Lifecycle
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -42,10 +52,10 @@ private extension AppDelegate {
 extension UIWindow {
     open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         let togglesDataStoreType: TogglesDataStoreType = BuildTargetDataStore.shared
-        if togglesDataStoreType.isToggleOn(BuildTargetToggle.debug) || togglesDataStoreType.isToggleOn(BuildTargetToggle.internal) {
-            // swiftlint:disable no_hardcoded_strings
+        if togglesDataStoreType.isToggleOn(BuildTargetToggle.debug) ||
+            togglesDataStoreType.isToggleOn(BuildTargetToggle.internal) ||
+            motion == .motionShake {
             AppRouter.share.route(to: UniversalLinks.internalMenu.url, from: rootViewController, using: .present)
-            // swiftlint:enable no_hardcoded_strings
         }
     }
 }
