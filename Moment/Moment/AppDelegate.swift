@@ -46,6 +46,7 @@ private extension AppDelegate {
 
         // Register routing here
         AppRouter.share.register(path: UniversalLinks.internalMenu.rawValue, navigator: InternalMenuNavigator())
+        AppRouter.share.register(path: UniversalLinks.designKitDemo.rawValue, navigator: DesignKitDemoNavigator())
     }
 }
 

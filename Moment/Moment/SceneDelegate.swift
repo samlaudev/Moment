@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = MomentsTimelineViewController()
-        window?.backgroundColor = .white
         window?.makeKeyAndVisible()
     }
 

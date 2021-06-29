@@ -5,7 +5,7 @@
 //  Created by Sam Lau on 2021/6/22.
 //
 
-enum InternalMenuItemType {
+enum InternalMenuItemType: String {
     case description
     case featureToggle
     case actionTrigger

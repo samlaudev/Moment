@@ -9,6 +9,7 @@ import Foundation
 
 enum UniversalLinks: String {
     case internalMenu
+    case designKitDemo
 
     // swiftlint:disable no_hardcoded_strings
     static let baseURL = "https://momentsapp.com/"
